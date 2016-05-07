@@ -76,6 +76,9 @@ Vagrant.configure(2) do |config|
   config.vm.provision "shell", inline: <<-SHELL
     set -x
 
+    # NOTE: These commands are adapted from
+    #       https://bitbucket.org/chromiumembedded/cef/wiki/MasterBuildQuickStart#markdown-header-linux-setup
+
     mkdir -p ~/code/automate
     mkdir -p ~/code/chromium_git
 
